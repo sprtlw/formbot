@@ -36,7 +36,7 @@ WebDriverWait(web, 10).until(
         EC.presence_of_element_located((By.ID, 'field140649479-first'))
     )
 
-# web elemennts
+# web elements
 wFirstName = web.find_element(By.ID, 'field140649479-first')
 wLastName = web.find_element(By.ID, 'field140649479-last')
 wMail = web.find_element(By.ID, 'field140649480')
@@ -62,7 +62,7 @@ for i in range(int(num)):
         tEmail = element.get_attribute('value')
         print(f'New temporary email address: {tEmail}')
     
-    # construct the email address with the alias
+    # merge the email address with the alias
     iEmail = f'{tEmail.split("@")[0]}+{alias}@{tEmail.split("@")[1]}'
     wMail.send_keys(iEmail)
     tempEmailCounter += 1
