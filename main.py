@@ -29,7 +29,7 @@ except:
 
 # web init
 web = webdriver.Chrome()
-web.get('https://www.nhl.com/redwings/community/teacher-of-the-month')
+web.get('REDACTED')
 
 # wait for page to load
 WebDriverWait(web, 10).until(
